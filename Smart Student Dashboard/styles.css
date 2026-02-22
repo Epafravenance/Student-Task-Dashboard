@@ -1,0 +1,55 @@
+body.dark {
+  background-color: #0a0a0a !important;
+  color: white;
+}
+
+body.dark.bg-light {
+  background-color: #0a0a0a !important;
+}
+
+body.dark .card {
+  background-color: #1a1a1a;
+}
+
+body.dark .list-group-item {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+body.dark .form-control {
+  background-color: #2a2a2a;
+  color: white;
+  border: none;
+}
+
+body.dark .form-control::placeholder {
+  color: #aaa;
+}
+
+/* Animate task appearance */
+#taskList li {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+#taskList li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover effects */
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+/* Progress bar smooth transition */
+.progress-bar {
+  transition: width 0.5s ease;
+}
+
+.progress {
+  height: 25px;
+  border-radius: 12px;
+}
